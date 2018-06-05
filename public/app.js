@@ -52,6 +52,37 @@ $(function() {
 	getAndDisplayGymReviews(); 
 })
 
+//sign-up form 
+
+$('.signup-form').on('submit', event => {
+	event.preventDefault(); 
+
+	let username = $('.username').val(); 
+	let password = $('.passsword').val();
+
+	$.ajax({
+		method: 'POST', 
+		url: '/user-acc', 
+		data: JSON.stringify({username, password}),
+		contentType: 'application/json', 
+		dataType: 'json', 
+
+		success: response => {
+			console.log(response); 
+			window.location = 'index.html'
+		}, 
+
+		error: function(object, message) {
+			console.log(object); 
+			$('.feedback').show(); 
+		} 
+	}); 
+});
+
+$('#signUp-button').on('click', event => {
+	window.location = 'sign-up.html'; 
+}); 
+
 //log-in form
 
 $('.login-form').on('submit', event => {

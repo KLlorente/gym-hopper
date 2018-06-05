@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>GymHopper</title>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
+	<main role = "main">
+		<div class ="js-start-dispaly" id="start-page">
+			<header class="row">
+				<h1 class="logo">Welcome to Gym Hopper</h1>
+				<p>Gym Hopper is a site that helps you keep track of what gyms and fitness centers you've been to, and which ones are worth going back to or not.</p>
+			</header>
+		</div>
+		<nav role="navigation" class="nav">
+			<ul>
+				<a href="#""><li class="nav-left"><span class="nav-logo">GymHopper</span></li></a>
+				<a href="#sign-up.html"><li class="nav-left nav hover" id="signUp-button">Sign-up!</li></a>
+				<a href="#login-containter"><li class="nav-right nav-hover" >Sign In</li></a>
+			</ul>
+		</nav>
+	
 
-	<h1>Hello World!</h1>
+	<hr>
+	<div class ="login-container">
+		<h2>Sign-in!</h2>
+			<p>Enter in your username and password</p>
+		<form class="login-form">
+			<fieldset>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" placeholder="Username"class="username"><br>
+				<label for="password">Password:</label>
+				<input id="password" name="password" placeholder="password" class="password"/><br>
+				<button type= "submit" class ="sign-in-button-js" name="button" aria-label"">Sign-in!</button>
+				<p>Don't have an account? <button type="button" id="signUp-button" name="button">Click Here</button> to Sign Up!</p>
+			</fieldset>	
+		</form>
+	</div>
+	</main>
+</body>
 
+<script src="htjtps://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

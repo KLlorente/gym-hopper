@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<main role="main">
+		<div class="signup-container">
+			<h1>Welcome to Gym Hopper</h1>
+			<p class="signup-instructions">Please fill out the following forms to get started:</p>
+			<form class="signup-form">
+				<filedset>
+					<label for="username">Username: </label>
+					<input type="text" id="username" name="username" class="username" placeholder="username"/>
+					<br>
+					<label for="password">Password: </label>
+					<input type="text" id="password" name="password" class="password" placeholder="password"/>
+					<br>
+					<button type="submit" name="button" class="signup-button-js">Sign Up!</button>
+					<p role="region" class="feedback" style="display:none">Username already taken</p>
+					<p>Already have an account? <a href="#" class="login-button">Click Here</a> to sign in</p>
+
+				</filedset>
+			</form>
+		</div>
+	</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

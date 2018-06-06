@@ -4,21 +4,24 @@ var MOCK_GYM_REVIEWS = {
 		"id" : "1111111", 
 		"name" : "Gold's Gym", 
 		"location" : "4203 Idaho St. San Diego, CA 92104",
-		"rating" : 5,  
+		"rating" : 5,
+		"url" : "www.goldsgym.com"   
 		"content" : "A good place to workout"
 	}, 
 	{
 		"id" : "2222222", 
 		"name" : "24 Hour Fitness", 
 		"location" : "1234 Cherry Lane San Diego, CA 92104",
-		"rating" : 2, 
+		"rating" : 2,
+		"url" : "www.goldsgym.com"  
 		"content" : "too crowded"
 	}, 
 	{
 		"id" : "3333333", 
 		"name" : "LA Fitness", 
 		"location" : "4444 Ocean Ave. Chula Vista, CA 91910",
-		"rating" : 4, 
+		"rating" : 4,
+		"url" : "www.goldsgym.com"  
 		"content" : "very clean"
 	}, 
 	{
@@ -26,6 +29,7 @@ var MOCK_GYM_REVIEWS = {
 		"name" : "Soul Cycle", 
 		"location" : "5534 La Jolla Village Dr. La Jolla, CA 92122",
 		"rating" : 4, 
+		"url" : "www.goldsgym.com" 
 		"content" : "Jenna is the best teacher"
 	}
 

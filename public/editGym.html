@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<section role="region">
+		<header class="title">
+			<h1 class="header">Edit Saved Gyms</h1>
+		</header>
+		<nav role="navigation" class="nav">
+			<ul>
+				<li class="nav-left"><span class="nav-logo">Gym Hopper</span></li>
+				<a href="/gym-search.html"><li class="nav-left nav-hover">Find More Gyms</li></a>
+				<a href="/"><li class="nav-right nav-hover log-out" id="log-out">Log out></li></a>
+			</ul>
+		</nav>
+	</section>
+	<main>
+		<form class= "new-gym-form">
+			<div class="new-gym-input">
+				<input placeholder="Gym Name" aria-label="title-input" type="text" name="gym-title" id="gym-title" autocomplete="off"/>
+				<input class="gym-rating" aria-label="gymRating-input" placeholder="7.5" name="gym-rating" type="number" id="gym-rating" autocomplete="off"/>
+				<input class="gym-address" aria-label="gymAddress-input" placeholder="Address" name="gym-address" autocomplete="off" type="text">
+				<input class="gym-url" aria-label="gymUrl-input" placeholder="URL" name="gym-url" type="url" autocomplete="off">
+				<textarea id="userComments" aria-label="text-area" class="gym-entry" placeholder="Write any comments/reviews..."></textarea>
+			</div>
+			<div class="submit-button">
+				<button type="submit" class="publish">Update</button>
+			</div>
+		</form>
+	</main>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+ 
+<script src="/editGym.js"></script>
+
+</body>
+</html>

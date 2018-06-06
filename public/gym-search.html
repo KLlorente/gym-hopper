@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-</head>
-<body>
-	<main>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>foursquare search</title>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <main>
+      	<nav role="navigation" class="nav">
+			<ul>
+				<a href="#""><li class="nav-left"><span class="nav-logo">GymHopper</span></li></a>
+				<a href="#sign-up.html"><li class="nav-left nav hover" id="signUp-button">Sign-up!</li></a>
+				<a href="#login-containter"><li class="nav-right nav-hover" >Sign In</li></a>
+			</ul>
+		</nav>
 
-		<form action="#" class="search-form" id="search-qeru-form">
-			<input type="text" placeholder="Enter a city" aria-label ="input" class="js-query" id="search-term" required>
-			<button type="submit" aria-label="search" class="submit-button">Search</button>
-		</form>
+		<div>
+        	<h2>Enter in your city to find gyms and fitness centers in your area!</h2>
+          	<form action="#" class="js-search-form">
+           		<label for="query"></label>
+            	<input type="text" class="js-query" placeholder="Enter a City" id="search-term">
+            	<button type="submit" aria-label="search" class="submit-button">Search</button>
+          	</form>
 
-		<section class="js-search-results"></section>
-	</main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="gym-search.js"></script>
-</body>
+         <section>	
+         	<h2>Results</h2>
+          	<div class="js-search-results">
+          	</div>
+          </section>	
+        </div>
+      
+      </main>
+      <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+      <script src="gym-search.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrOgdOELhuu35Ss7qN95LHNkaCYlFqVTo&libraries=places&callback=activatePlacesSearch"></script>
+    </body>
 </html>
